@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "Николай",
+    "Authorization": true
+  },
+  {
+    "Name": "",
+    "Authorization": false
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id_transport": 1,
+    "marka": "Toyota",
+    "model":2,
+    "year_of_born": "2010",
+    "number_registrion":"BVC 901-045-111" ,
+    "data_registrion": "2011" ,
+    "data_delete":"2022"
+  },
+  {
+    "id_transport": 2,
+    "marka": "DJI",
+    "model":1,
+    "year_of_born": "2021",
+    "number_registrion":"AWR 992-103-982",
+    "data_registrion": "2021" ,
+    "data_delete":""
+  },
+  {
+    "id_transport": 3,
+    "marka": "Northrop",
+    "model":4,
+    "year_of_born": "2013",
+    "number_registrion":"ABC 911-122-999",
+    "data_registrion": "2014" ,
+    "data_delete":""
+  },
+  {
+    "id_transport": 4,
+    "marka": "Airbus",
+    "model":25,
+    "year_of_born": "2020",
+    "number_registrion":"ABV 992-123-986" ,
+    "data_registrion": "2021",
+    "data_delete":""
+  }
+]

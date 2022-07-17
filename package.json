@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^12.2.2",
+    "plasma": "^0.9.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-contextmenu": "^2.14.0",
+    "react-data-grid": "^7.0.0-beta.13",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5",
+    "styled-css-grid": "^1.2.1"
   },
   "devDependencies": {
     "eslint": "8.19.0",
