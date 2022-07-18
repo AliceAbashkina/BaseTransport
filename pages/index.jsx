@@ -64,6 +64,7 @@ const Button = styled.button`
             setImage(URL.createObjectURL(event.target.files[0]));
         }
     }
+    function hideAllError(str) {return true;}
 
     const onImageChange2 = (event) => {
         if (event.target.files && event.target.files[0]) {
@@ -632,6 +633,7 @@ var input, filter, table, tr, td, i;
 
             }
         }
+        try {
         return (
             <div onMouseMoveCapture={onloadDoc}  className={home.container}>
                 <Grid columns={12}>
@@ -802,7 +804,7 @@ var input, filter, table, tr, td, i;
 
 
                          {cardTransport ?
-                             <Cell top="5" width={7} > <>
+                             <Cell top="5" width="7"> <>
                              <table id="myTableTime" cellSpacing="0" rules="all" border="1" style={{borderCollapse: "collapse", width:"140%", marginLeft:"5%"}} className={home.text_tables_setting}>
                                  <thead>
                                  <th>id транспорта</th>
@@ -823,9 +825,9 @@ var input, filter, table, tr, td, i;
                                      <td><input type="text" id={"model_transport_save2"+[checkIdTransport-1]} style={{width:"50%"}} /></td>
                                      <td><input type="text" id={"year_of_born_save2"+[checkIdTransport-1]} style={{width:"50%"}} /></td>
                                      <td><input type="text" className={home.Numberinput}  title="Пример ABV 992-123-983" pattern="[A-Z]{3}\s[0-9]{3}-[0-9]{3}-[0-9]{3}" id={"number_transport_save2"+[checkIdTransport-1]} style={{width:"50%"}} /></td>
-                                     <td><input type="text" id={'status_save'+[checkIdTransport-1]} style={{width:"50%"}} /></td>
                                      <td><input type="text" id={"data_reg_transport_save2"+[checkIdTransport-1]} style={{width:"50%"}} /></td>
                                      <td><input type="text" id={"data_end_transport_save2"+[checkIdTransport-1]} style={{width:"50%"}} /></td>
+                                     <td><input type="text" id={'status_save'+[checkIdTransport-1]} style={{width:"50%"}} /></td>
                                      <td style={{width:"10%"}}>{
                                          <>
                                          <input type="file" onChange={onImageChange} className="filetype" />
@@ -852,5 +854,8 @@ var input, filter, table, tr, td, i;
                 </Grid>
             </div>
         )
-
+}
+catch (error) {
+  console.error(error);
+}
     }}
